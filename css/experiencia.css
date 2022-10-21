@@ -2,10 +2,28 @@
     color: #e0e0e0;
 }
 
-.experience .text {
+.experience-text {
     font-size: 1.5rem;
     line-height: 1.33;
     margin-bottom: 60px;
     max-width: 40ch;
     color: #525252;
+}
+
+.experience-text strong {
+    color: #141414;
+}
+
+.company {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.company-year {
+    position: absolute;
 }
