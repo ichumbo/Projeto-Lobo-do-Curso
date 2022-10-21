@@ -1,3 +1,8 @@
+.formation {
+    background: #141414;
+    color: #fff;
+}
+
 .formation-container {
     max-width: 1200px;
     padding: 40px 20px;
@@ -5,4 +10,20 @@
     display: grid;
     grid-template-columns: 4fr 8fr;
     gap: 100px;
+}
+
+.formation .sub-title {
+    color: black;
+}
+
+.formation-text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+    color: #a3a3a3;
+}
+
+.formation-text strong {
+    color: #fff;
 }
