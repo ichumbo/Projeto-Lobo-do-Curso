@@ -1,1 +1,11 @@
-.experience {}
+.experience .sub-title {
+    color: #e0e0e0;
+}
+
+.experience .text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+    color: #525252;
+}
