@@ -30,3 +30,11 @@ img {
     max-width: 4ch;
     word-break: break-all;
 }
+
+@media (max-width: 800px) {
+    .sub-title {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial;
+    }
+}

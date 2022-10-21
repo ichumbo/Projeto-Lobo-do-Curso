@@ -72,3 +72,28 @@
     background: #fff;
     padding: 5px 10px;
 }
+
+@media (max-width: 800px) {
+    .experience {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .experience .sub-title {
+        color: #141414;
+    }
+    .experience-text {
+        font-size: 1.25rem;
+    }
+    .company-year {
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+    .company {
+        grid-template-columns: 1fr;
+    }
+}
