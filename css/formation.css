@@ -27,3 +27,10 @@
 .formation-text strong {
     color: #fff;
 }
+
+.college-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
