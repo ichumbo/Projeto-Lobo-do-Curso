@@ -73,3 +73,34 @@
     color: #a3a3a3;
     font-size: 1.125rem;
 }
+
+.course {
+    margin-bottom: 60px;
+}
+
+.formation-extra h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formation-extra h3::before {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -36px;
+    top: -4px;
+}
+
+.course {
+    background: url(../img/cursos.svg) no-repeat center center;
+}
+
+.languages {
+    background: url(../img/idiomas.svg) no-repeat center center;
+}
