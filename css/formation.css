@@ -56,4 +56,20 @@
     line-height: 1.4;
     margin-bottom: 40px;
     position: relative;
+    flex: 1;
+}
+
+.college-course::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd09);
+    position: absolute;
+    left: -24px;
+}
+
+.college-institution {
+    color: #a3a3a3;
+    font-size: 1.125rem;
 }
