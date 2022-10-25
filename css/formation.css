@@ -97,10 +97,25 @@
     top: -4px;
 }
 
-.course {
+.course h3::before {
     background: url(../img/cursos.svg) no-repeat center center;
 }
 
-.languages {
+.languages h3::before {
     background: url(../img/idiomas.svg) no-repeat center center;
+}
+
+.formation-extra li {
+    font-size: 1.125rem;
+    font-weight: 1.1;
+    margin-bottom: 20px;
+}
+
+.formation-extra span {
+    color: #8f8f8f;
+}
+
+.course li {
+    display: flex;
+    justify-content: space-between;
 }
