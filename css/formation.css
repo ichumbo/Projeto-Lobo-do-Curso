@@ -17,7 +17,8 @@
     display: block;
     width: 130px;
     height: 100px;
-    background: url(../img/detalhe.svg);
+    background: url(../img/detalhe.svg) no-repeat center;
+    position: absolute;
 }
 
 .formation .sub-title {
