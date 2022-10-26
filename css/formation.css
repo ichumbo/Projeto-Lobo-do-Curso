@@ -12,6 +12,14 @@
     gap: 100px;
 }
 
+.formation-container::after {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../img/detalhe.svg);
+}
+
 .formation .sub-title {
     color: black;
 }
@@ -120,4 +128,16 @@
     justify-content: space-between;
 }
 
-@media (max-width: 800px) {}
+@media (max-width: 800px) {
+    .formation-container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+    .formation .sub-title {
+        color: #fff;
+    }
+    .formation-text {
+        font-size: 1.25rem;
+    }
+}
