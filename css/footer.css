@@ -29,3 +29,9 @@
 .footer-contact li a {
     color: #fff;
 }
+
+.footer-copy {
+    grid-column: 1 / -1;
+    font-size: 1.125rem;
+    color: #8f8f8f;
+}
