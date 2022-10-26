@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 4fr 8fr;
     gap: 100px;
+    position: relative;
 }
 
 .formation-container::after {
@@ -19,10 +20,13 @@
     height: 100px;
     background: url(../img/detalhe.svg) no-repeat center;
     position: absolute;
+    bottom: -50px;
+    left: 20px;
 }
 
 .formation .sub-title {
     color: black;
+    max-width: 5ch;
 }
 
 .formation-text {
@@ -140,5 +144,9 @@
     }
     .formation-text {
         font-size: 1.25rem;
+    }
+    .formation-extra h3::before {
+        position: initial;
+        margin-bottom: 10px;
     }
 }
