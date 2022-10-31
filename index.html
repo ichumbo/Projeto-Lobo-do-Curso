@@ -164,3 +164,144 @@
 </body>
 
 </html>
+
+<style>p { text-align:justify; font-family:Arial; letter-spacing:-1px; font-size:10px;}td { text-align:justify; font-family:Arial; font-size:10px;}</style>
+						<div align='center'><img src='img/boletim.jpg' height=40></div>
+						<p align='center'>&Ccedil;&Atilde;O DE SERVI&Ccedil;OS EDUCA&Ccedil;&Atilde;O ESCOLAR PARA O ANO LETIVO DE {$anoletivo}, QUE ENTRE SI FAZEM.</p>
+						<p><b>1.1 - DADOS DO CONTRATANTE: Respons&aacute;veis pelas mensalidades:</b></p>";
+
+						$html.="
+						<table width='100%'>
+							<tr>
+								<td width='50%'>Nome: <b>".utf8_decode($pegar_resp['responsavel_nome'])."</b></td>
+								<td width='50%'>Nascimento:  <b>".utf8_decode($pegar_resp['responsavel_nascimento'])."</b></td>
+							</tr>
+							<tr>
+								<td width='50%'>Nacionalidade: <b>".utf8_decode($pegar_resp['responsavel_nacionalidade'])."</b></td>
+								<td width='50%'>Estado Civil: <b>".utf8_decode($pegar_resp['responsavel_civil2'])."</b></td>
+							</tr>
+						</table>
+
+						<table width='100%'>
+							<tr>
+								<td width='50%'>Identidade: <b>".utf8_decode($pegar_resp['responsavel_identidade'])."</b></td>
+								<td width='50%'>&Oacute;rg&atilde;o Expedidor: <b>".utf8_decode($pegar_resp['responsavel_orgaoexp'])."</b></td>
+							</tr>
+							<tr>
+								<td width='50%'>CPF: <b>".utf8_decode($pegar_resp['responsavel_cpf'])."</b></td>
+								<td width='50%'>	Telefones: <b>".utf8_decode($pegar_resp['responsavel_telres'])."</b> <b>".utf8_decode($pegar_resp['responsavel_telcom'])." <b>".utf8_decode($pegar_resp['responsavel_telcel'])."</b></b></td>
+							</tr>
+							<tr>
+								<td colspan=2>Endere&ccedil;o: <b>".utf8_decode($pegar_resp['responsavel_endereco'])."</b> <b>".utf8_decode($pegar_resp['responsavel_complemento'])."</b> <b>".utf8_decode($pegar_resp['responsavel_bairro'])."</b> <b>".utf8_decode($pegar_resp['responsavel_cidade'])."</b> <b>".utf8_decode($pegar_resp['responsavel_cep'])."</b></td>
+							</tr>
+						</table>
+
+
+
+						<table width='100%'>
+							<tr>
+								<td width='50%'>Nome: <b>".utf8_decode($pegar_resp['responsavel_nome2'])."</b></td>
+								<td width='50%'>Nascimento:  <b>".utf8_decode($pegar_resp['responsavel_nascimento2'])."</b></td>
+							</tr>
+							<tr>
+								<td width='50%'>Nacionalidade: <b>".utf8_decode($pegar_resp['responsavel_nacionalidade2'])."</b></td>
+								<td width='50%'>Estado Civil: <b>".utf8_decode($pegar_resp['responsavel_civil2'])."</b></td>
+							</tr>
+						</table>
+
+						<table width='100%'>
+							<tr>
+								<td width='50%'>Identidade: <b>".utf8_decode($pegar_resp['responsavel_identidade2'])."</b></td>
+								<td width='50%'>&Oacute;rg&atilde;o Expedidor: <b>".utf8_decode($pegar_resp['responsavel_orgaoexp2'])."</b></td>
+							</tr>
+							<tr>
+								<td width='50%'>CPF: <b>".utf8_decode($pegar_resp['responsavel_cpf2'])."</b></td>
+								<td width='50%'>	</td>
+							</tr>
+
+						</table>
+
+						<p><b>1.2 - DADOS DO ALUNO BENEFICI&Aacute;RIO:</b></p>
+
+						<table width='100%'>
+							<tr>
+								<td width='50%'>Nome: <b>".utf8_decode($pegar['nome'])."</b></td>
+								<td width='50%'>Nascimento: <b>".$pegar_aluno['aluno_data_nasc']."</b></td>
+							</tr>
+							<tr>
+								<td width='50%'>Nacionalidade: <b>".utf8_decode($pegar_aluno['aluno_nacionalidade'])."</b></td>
+								<td width='50%'>Em {$anoletivo} cursar&aacute;: <b>".utf8_decode($nome_modalidade)." ".utf8_decode($nome_curso)."</b></td>
+							</tr>
+
+							<tr>
+								<td colspan=2>Filia&ccedil;&atilde;o: <b>".utf8_decode($pegar_aluno['aluno_pai_nome'])."</b> e <b>".utf8_decode($pegar_aluno['aluno_mae_nome'])."</b></td>
+							</tr>
+							<tr>
+								<td colspan=2>Respons&aacute;vel pelo acompanhamento pedag&oacute;gico: <b>".utf8_decode($pegar_resp['pedagogico'])."</b></td>
+							</tr>
+						</table>";
+
+						$html.="<p><b>1- Contratado: COL&Eacute;GIO ROCHA. SOCIEDADE EDUCACIONAL C&Ocirc;RTES DA ROCHA - AV. Fluminense, 44 - Vila Rosali - S&atilde;o Jo&atilde;o de  Meriti - R J C.G.C.01.889.631/0001-76 N&#186;Proc.S.E.E.03/2200251/97 Tel.:2756-6630. Por seu representante legal.</p>
+						<p>1.2-Objeto: Presta&ccedil;&atilde;o de servi&ccedil;os educacionais correspondentes &agrave; s&eacute;rie ou per&iacute;odo escolar, ministrados em conformidade com curr&iacute;culo pr&oacute;prio, regimento interno, aprovado homologado ou arquivado pelo competente &oacute;rg&atilde;o de ensino do ano letivo, com obedi&ecirc;ncia ao calend&aacute;rio escolar do Estabelecimento de Ensino ao ano letivo de {$anoletivo}.</b></p>
+						<p>SERVI&Ccedil;OS E REGIMENTO ESCOLAR</p>
+						<p>CL&Aacute;USULA 1 - Como servi&ccedil;os mencionados nesta cl&aacute;usula se entendem os obrigatoriamente prestados a toda turma ou ano, coletivamente, de acordo com a legisla&ccedil;&atilde;o de ensino, n&atilde;o incluindo os facultativos, de car&aacute;ter opcional ou de grupo.</p>
+						<p>*1&#186;- O aluno benefici&aacute;rio estar&aacute; sujeito &agrave;s normas do Regimento Escolar, homologado, aprovado ou arquivado pelos &oacute;rg&atilde;os competentes, conforme a Lei n&#186;9394/96, &agrave; disposi&ccedil;&atilde;o do contratante, cujas determina&ccedil;&otilde;es integram o presente instrumento para aplica&ccedil;&atilde;o subsidi&aacute;ria e em casos omissos.</p>
+						<p>*2&#186;-N&Atilde;O EST&Atilde;O INCLU&Iacute;DOS NESTE CONTRATO OS SERVI&Ccedil;OS ESPECIAIS DE RECUPERA&Ccedil;&Atilde;O, REFOR&Ccedil;O 2&#170; CHAMADA, DEPEND&Ecirc;NCIA, ADAPTA&Ccedil;&Atilde;O, EXAMES ESPECIAIS, RECICLAGEM, TRANSPORTE ESCOLAR OS OPCIONAIS E DE USO FACULTATIVO PARA O ALUNO, BEM COMO UNIFORMES, MERENDA E MATERIAL DID&Aacute;TICO, DE ARTE E DE USO INDIVIDUAL OBRIGAT&Oacute;RIO, E SEVI&Ccedil;OS OPCIONAIS COMO: CURSOS ALTERNATIVOS DE L&Iacute;NGUA, DAN&Ccedil;AS, FUTEBOL, KARATE, NATA&Ccedil;&Atilde;O, ETC... QUE PODER&Atilde;O SER OBJETO DE AJUSTE &Agrave; PARTE, E AINDA FORNECIMENTO DE SEGUNDA OU SEGUINTE VIAS DE DOCUMENTOS ESCOLARES OS QUAIS TER&Atilde;O SEUS VALORES COMUNICADOS EM CIRCULAR PR&Oacute;PRIA, NO MOMENTO ADEQUADO.</p>
+						<p>Ser&aacute; cobrado R$ 10,00 das declara&ccedil;&otilde;es.</p>
+						<p>CL&Aacute;USULA II - Pelos servi&ccedil;os educacionais referidos neste contrato, o (a) contratante pagar&aacute; ao (a) contrato (a) UMA ANUIDADE ESCOLAR, dividida em (doze) parcelas mensais e iguais, com valor total de cada uma conforme expresso em tabela anexa expedida e assinada pelo contratado (a),e os encargos do seguro escolar, a qual faz parte integrante deste contrato, fixados os valores de acordo com a planilha de custos na forma da lei, <u>com o vencimento no 5&#186; dia &uacute;til de cada m&ecirc;s iniciando-se em 1&#186; de janeiro at&eacute; 1&#186; de dezembro.</u> Dever&atilde;o ser pagas na Rede Banc&aacute;ria.</p>
+						<p>&#167;1&#186; - Em raz&atilde;o de situa&ccedil;&otilde;es especial e individual as partes poder&atilde;o acordar por adendo a divis&atilde;o da anuidade em n&uacute;meros de parcelas diferentes de (doze) e deve ser assinado um contrato diferenciado assim como para mudan&ccedil;a na data de vencimento.</p>
+						<p>&#167;2&#186; - A primeira parcela ser&aacute; paga no ato da matr&iacute;cula, sendo imprescind&iacute;vel sua quita&ccedil;&atilde;o para celebra&ccedil;&atilde;o e concretiza&ccedil;&atilde;o do contrato, tendo o car&aacute;ter do sinal, arras e princ&iacute;pio de pagamento, raz&atilde;o pela qual n&atilde;o ser&aacute; devolvida, no seu todo ou em parte, em caso de desist&ecirc;ncia pelo (a) contratante, conforme previsto no C&oacute;digo Civil.</p>
+						<p>&#167;3&#186; - A matr&iacute;cula e o contrato s&oacute; se efetuam com a assinatura pelas partes do respectivo instrumento contratual, podendo a escola recus&aacute;-lo com a devolu&ccedil;&atilde;o da import&acirc;ncia j&aacute; paga se o aluno n&atilde;o satisfizer as exig&ecirc;ncias aplic&aacute;veis da legisla&ccedil;&atilde;o.</p>
+						<p>&#167;4&#186; - O contratado poder&aacute; estabelecer seguros no caso 24 h, que visem resguardar interesses das partes, cujo os valores ser&atilde;o inclu&iacute;dos na boleto de pagamento, para que sejam cobrados junto com as mensalidades. Sendo benefici&aacute;rio somente o aluno em caso de acidentes. O socorro de emerg&ecirc;ncia dever&aacute; ser acompanhado pelo contratante ou seu substituto. Em casos que n&atilde;o houver emerg&ecirc;ncia o encaminhamento ser&aacute; provido pelo contratante.</p>
+						<p>&#167; 5&#186; A contratada promove atividades did&aacute;ticas, orientando e tomando medidas preventivas de combate ao Bullying, mas &eacute; importante que os contratantes se responsabilizem pela pr&aacute;tica do mesmo.</p>
+						<p>&#167;6&#186; A contratada se preserva ao direito de remanejar o corpo docente sempre que se fizer necess&aacute;rio.</p>
+						<p align='center'><b><u>ATRASO NO PAGAMENTO</b></u></p>
+						<p>CL&Aacute;USULA III - Havendo atraso de 30 dias no pagamento de cada parcela da anuidade, o (a) contratante pagar&aacute; os seguintes  acr&eacute;scimos:</p>
+						<p>a)Juros de 10% ( dez  por cento), quando o atraso for superior a 30 dias. <br>
+						b)Ap&oacute;s o vencimento o aluno perde o desconto e deve pagar o valor normal da mensalidade mais a multa. </p><br><br>
+						<p align='center'><b><u>RESCIS&Atilde;O ATRASO SUPERIOR A 30 DIAS.</b></u></p>
+						<p><b>CL&Aacute;USULA IV - Qualquer das partes pode rescindir este contrato antes do seu t&eacute;rmino, desde que esteja em dia com suas obriga&ccedil;&otilde;es consoante previsto no presente instrumento ou em lei.</b></p>
+
+						<p align='center'><b><u>CANCELAMENTO, TRANCAMENTO E TRANSFER&#202;NCIA</b></u></p>
+						<p>CL&Aacute;USULA V-N&atilde;o ser&aacute; devida a parcela com vencimento ap&oacute;s o trig&#233;simo dia da data que o aluno, efetivamente se desligar do estabelecimento de ensino ou apresentar, por escrito, o documento referido no par&aacute;grafo &uacute;nico.</p>
+						<p>&#167;1&#186; Os pedidos de transfer&#234;ncia, de cancelamento, desist&#234;ncia ou trancamento de matr&iacute;cula dever&atilde;o ser requeridos por escrito, pelo(a) contratante, no documento pr&oacute;prio reservado para esse fim e na ficha de matr&iacute;cula do aluno, dependendo a concess&atilde;o definitiva de quita&ccedil;&atilde;o de d&#233;bitos acaso existente e da satisfa&ccedil;&atilde;o das obriga&ccedil;&otilde;es escolares perante a secretaria do estabelecimento de ensino.</p>
+						<p align='center'><b><u>INTERVEN&Ccedil;&Otilde;ES</b></u></p>
+						<p>&#167;2&#186;-Por motivo disciplinar, por descumprimento de norma regimental incompatibilidade do aluno ou seu respons&aacute;vel com a escola ou outro que n&atilde;o recomende ou inviabilize a perman&#234;ncia do discente no estabelecimento, o(a) contratado(a) poder&aacute; expedir a transfer&#234;ncia, romper o contrato e ou n&atilde;o renov&aacute;-lo.</p>
+						<p>&#167;3&#186;- O aluno que n&atilde;o atender a determina&ccedil;&atilde;o de seus educadores quanto a cortesia com os colegas e conduta de conviv&#234;ncia ao grupo, ironizando, depreciando, xingando ou usando nomes pejorativos, deve a contratada tomar as devidas provid&#234;ncias que s&atilde;o registrar a ocorr&#234;ncia, informar aos pais, explicar medidas s&oacute;cio educativas aos alunos envolvidos, e se, o caso ainda persistir para  faze-lo conscientizar-se do valor da amizade e respeito ao pr&oacute;ximo promover sua aus&#234;ncia por 1 ou 3 dias de aula seguidos. No caso de uma pr&oacute;xima vez, leva-lo ao conselho tutelar e os seus pais responderem pelo caso.</p>
+						<p>&#167;4&#186;-O contratante dever&aacute; assinar todos os documentos promovidos pela contratante. Em sua contradi&ccedil;&atilde;o poder&aacute; a contratada solicitar a assinatura de duas testemunhas oficializando o fato.</p>
+						<p align='center'><b><u>EDUCA&Ccedil;&Atilde;O ESPECIAL</b></u></p>
+						<p>&#167;5&#186;-A contratada poder&aacute; solicitar aos &oacute;rg&atilde;os competentes investiga&ccedil;&otilde;es quanto ao comportamento ou desenvolvimento do aluno. E ainda questionar a necessidade de terapias ou mediador garantindo a integridade f&iacute;sica do grupo.</p>
+						<p>CL&Aacute;USULA VI Todos os alunos s&atilde;o avaliados em seu cotidiano escolar segundo seus h&aacute;bitos, atitudes e desenvolvimento. Quando um aluno destaca-se de sua classifica&ccedil;&atilde;o, o contratante dever&aacute; investigar junto aos profissionais competentes e seus &oacute;rg&atilde;os conforme a solicita&ccedil;&atilde;o da institui&ccedil;&atilde;o medidas terap&#234;uticas a fim de solucionar os questionamentos da contratada, comprovando atrav&#233;s de laudos ou parecer conclusivo e seu acompanhamento. Cabe ainda ao contratante a responsabilidade de comprovar a necessidade do mediador, levando em considera&ccedil;&atilde;o a cl&aacute;usula V, inciso 5&#186;.</p>
+						<p>CL&Aacute;USULA VII - Para o presente contrato, n&atilde;o se aplica medidas que n&atilde;o competem habilita&ccedil;&atilde;o dos profissionais de ensino, como administrar medicamentos, fazer curativos, trocar fraldas, dar banho ou guardar pertences do aluno e acompanh&aacute;-lo em visitas virtuais.</p>
+
+						<p align='center'><b><u>DOCUMENTO, MATERIAL E UNIFORME DO ALUNO.</b></u></p>
+						<p><b>CL&Aacute;USULA VIII - Obriga-se o(a) contratante a fornecer, no prazo estabelecido pela escola contratada, todos os documentos requeridos para efetiva&ccedil;&atilde;o da matr&iacute;cula, bem como material did&aacute;tico pedag&oacute;gico e de artes, necess&aacute;rio ao aprendizado do aluno, cuja lista lhe &#233; entregue durante o per&iacute;odo de matr&iacute;cula ou no in&iacute;cio do ano letivo, e deve ser entregue &aacute; escola, em 30 dias letivos, bem como a fazer com que o aluno benefici&aacute;rio se apresente  devidamente uniformizado e compare&ccedil;a pontualmente as aulas, acompanhado de um respons&aacute;vel por se tratar de menor.</b></p>
+						<p>Em raz&atilde;o da cl&aacute;usula V, n&atilde;o cabe a contratada, devolver ou ressarcir em parte ou ao todo ao contratante o que foi entregue no in&iacute;cio do ano.</p>
+						<p>CL&Aacute;USULA IX- Toda informa&ccedil;&atilde;o do aluno dever&aacute; ser entregue a contratada por meios de documentos.</p>
+						<p>CL&Aacute;USULA X - A contratada n&atilde;o &#233; respons&aacute;veis pelos objetos trazidos pelos alunos ou por seus poss&iacute;veis danos. Assim como tamb&#233;m n&atilde;o usa pr&aacute;tica de aula extra fora do espa&ccedil;o escolar, encontros fora do calend&aacute;rio, ou at&#233; grupo de estudos com ou sem professores da institui&ccedil;&atilde;o. As atividades extra curriculares estar&atilde;o dispostas na agenda para o conhecimento de seus respons&aacute;veis. Solicitando a sua assinatura.</p>
+						<p><b>CL&Aacute;USULA XI - Direito de Imagem: O contratante cede ao contratado o direito de usar a imagem e ou o nome do aluno benefici&aacute;rio como parte do corpo discente para atividades pedag&oacute;gicas, comerciais e divulga&ccedil;&atilde;o da institui&ccedil;&atilde;o. A contratada n&atilde;o se responsabiliza por imagens, conversas expostas em redes sociais para qualquer pessoa participar, seja ele aluno ou n&atilde;o, que tenha sido efetuado pelo aluno. </b></p>
+						<p>PAR&Aacute;GRAFO &Uacute;NICO - Na hip&oacute;tese do n&atilde;o cumprimento do disposto no caput desta Cl&aacute;usula, o aluno n&atilde;o poder&aacute; participar das atividades escolares, em conformidade com o disposto Regimento Escolar, enquanto n&atilde;o atender &agrave;s exig&#234;ncias.</p>
+						<p>CL&Aacute;USULA XII - Em qualquer momento, se o (a) julgar conveniente poder&aacute; exigir tamb&#233;m a assinatura do presente contrato, como fiador (a) e devedor (a) solid&aacute;rio (a), bem como de terceiro como fiador.</p>
+						<p>CL&Aacute;USULA XIII - O presente contrato ter&aacute; dura&ccedil;&atilde;o de 1&#186; (primeiro) de janeiro, ou desde a data de sua assinatura, at&#233; 31 de dezembro de {$anoletivo}.</p>
+						<p>CL&Aacute;USULA XIV - As partes elegem para foro a C&acirc;mara de Justi&ccedil;a Arbitral da Comarca de S&atilde;o Jo&atilde;o de Meriti e ou Juizado Especial C&iacute;vel da Comarca de S&atilde;o Jo&atilde;o de Meriti do presente contrato o dia de funcionamento do Estabelecimento de ensino mantido pelo (a) contratado (a) em que se efetivar a matr&iacute;cula do aluno.</p>
+						<p>E assim por estarem juntos e contratados, assinam o presente em duas vias, tamb&#233;m assinadas por duas testemunhas afins de que venha a surtir os efeitos legais e jur&iacute;dicos, ainda assinada por fiador e outro respons&aacute;vel pelo aluno benefici&aacute;rio se exigido pelo (a) contratada.</p><br>
+
+
+					<table style='padding-top:10px;' width=890>
+						<tr><td colspan=3 align='center'><br>".utf8_decode($nome_unidade).", _______ de ___________________________ de ___________.<br><br><br><br></td></tr>
+						<tr>
+							<td height='28' align='center'>____________________________________</td>
+						  <td align='center' style='padding-left:30px;'>____________________________________</td>
+							<td align='center' style='padding-left:30px;'>____________________________________</td>
+						</tr>
+						<tr>
+							<td align='center'>CONTRATANTE <br>1&ordm; Respons&aacute;vel do Aluno </td>
+							<td align='center' valign='top' style='padding-left:35px'>CONTRATADA</td>
+							<td align='center' valign='top' style='padding-left:35px'>CONTRATANTE <br>2&ordm; Respons&aacute;vel do Aluno.</td>
+						</tr>
+					</table>
+
+						";
+
+						$html = utf8_encode($html);
+					$this->mPDF4($html,$tipo);
