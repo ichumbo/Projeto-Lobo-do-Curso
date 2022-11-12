@@ -2,6 +2,18 @@
     align-items: center;
 }
 
+.introduction .photo {
+    border-radius: 20px 100px;
+}
+
+.introduction span {
+    color: #9CFF2E;
+}
+
+.introduction .color {
+    color: #9CFF2E;
+}
+
 .introduction h1 {
     font-size: 4.5rem;
     line-height: 81px;
